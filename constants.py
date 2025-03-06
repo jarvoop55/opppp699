@@ -36,12 +36,12 @@ REPEAT_BALL = set([])
 
 # Hunting Team
 POKEMON_TEAM = [
-    "Applin", "Abomasnow", "Golurk",
-    "Gardevoir", "Arceus", "Xerneas"
+    "Corvisquire", "Sceptile", "Snorlax",
+    "Sliggoo", "Scizor", "Solgaleo"
 ]   # Add your preferred Pokémon for hunting here
 
 # Owner and Bot Information
-OWNER_NAME = "Enryu"
+OWNER_NAME = "Vegeta"
 BOT_VERSION = "1.0"
 
 # Commands
