@@ -8,8 +8,8 @@ import constants
 from evaluate import ExpressionEvaluator
 from guesser import PokemonIdentificationEngine
 from hunter import PokemonHuntingEngine
-from afk import AFKManager  
-from alive import AliveHandler  # Import AliveHandler
+from afk import AFKManager
+from alive import AliveHandler
 
 HELP_MESSAGE = """**Help**
 
@@ -48,8 +48,8 @@ class Manager:
         self._guesser = PokemonIdentificationEngine(client)
         self._hunter = PokemonHuntingEngine(client)
         self._evaluator = ExpressionEvaluator(client)
-        self._afk_manager = AFKManager(client)  
-        self._alive_handler = AliveHandler(client)  
+        self._afk_manager = AFKManager(client)
+        self._alive_handler = AliveHandler(client)
 
     def start(self) -> None:
         """Starts the Userbot's automations."""
@@ -57,7 +57,7 @@ class Manager:
         self._guesser.start()
         self._hunter.start()
         self._evaluator.start()
-        self._alive_handler.register()  
+        self._alive_handler.register()
 
         # Add AFK event handlers
         for handler in self._afk_manager.get_event_handlers():
